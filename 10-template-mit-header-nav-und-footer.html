@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site-Navigation - Übungswebsite "HTML + CSS" mit Bootstrap 5</title>
+    <title>Template mit Header, Nav und Footer - Übungswebsite "HTML + CSS" mit Bootstrap 5</title>
 
     <!-- https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/mein.css">
-
+  
 </head>
 
 <body>
+    <header class="site-header pt-3 pb-0">
+        <div class="container">
+            <h1 class="site-logo">
+            <img src="bilder/html+css-logo-222.png"
+                srcset="bilder/html+css-logo-222.png 1x,
+                        bilder/html+css-logo-444.png 2x"
+                alt="HTML + CSS" 
+                width="222" 
+                height="33">             
+            </h1>
+
+            <p class="site-slogan">Webseiten erstellen und gestalten</p>                
+
+        </div>
+    </header>
 
     <nav class="site-nav navbar navbar-expand-sm sticky-top navbar-dark bg-dark py-0 mt-3 mb-5 shadow">
         <div class="container">
@@ -25,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">	
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
+                        <a class="nav-link active" aria-current="page" href="#">Startseite</a>
                     </li>	
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
@@ -42,6 +57,25 @@
         </div>
     </nav>
 
+    <main class="site-content">
+
+        <p class="text-center">Hier kommt der Inhalt hin.</p>
+
+    </main>
+
+    <footer class="site-footer bg-dark mt-5">
+        <div class="container">
+
+            <nav class="site-meta navbar navbar-expand navbar-dark py-0">
+                <ul class="navbar-nav d-flex w-100">
+                    <li class="nav-item mr-3"><a href="#" class="nav-link">Impressum</a></li>
+                    <li class="nav-item mr-auto"><a href="#" class="nav-link">Datenschutz</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nach oben</a></li>  
+                </ul>
+            </nav>
+
+        </div>
+    </footer>
 
     <!-- Bootstrap JS für collapsible navbar -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>

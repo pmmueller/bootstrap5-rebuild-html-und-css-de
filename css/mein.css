@@ -1,0 +1,38 @@
+
+/** 
+  * Restrain the container 
+  * niemals breiter als 960px 
+  */
+.container { max-width: 960px !important; }
+
+
+/** 
+  * Navigation gestalten 
+  */ 
+
+.site-nav a {
+    min-width: 12ch; 
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;  
+}
+.site-nav a.active, 
+.site-nav a:hover, 
+.site-nav a:focus {
+    background: var(--bs-secondary);
+    color: var(--bs-white) !important;
+}
+.navbar-toggler {
+    font-size: 1rem; 
+    border: none; 
+}
+
+/* Breakpoint sm */
+@media screen and (min-width: 576px) {
+    /* Farbwert .bg-light */
+    .site-nav li {
+        text-align: center;
+        border-right: 1px solid var(--bs-light); 
+    }
+    .site-nav li:first-child { border-left: 1px solid var(--bs-light); }
+    
+} /* Ende @media */ 
