@@ -2,7 +2,7 @@
 
 Übungswebsite von [https://html-und-css.de] mit Bootstrap 5 nachbauen 
 
-In den einzelnen Dateien werden nur die jeweiligen Abschnitte gezeigt und gespeichert. Zusammengebaut werden die kompletten Seiten erst danach. 
+In den einzelnen Dateien werden nur die jeweiligen Komponenten gespeichert. Zusammengebaut werden die kompletten Seiten erst danach. 
 
 Im Videokurs wird die Seite Stück für Stück aufgebaut und wächst live mit. 
 
