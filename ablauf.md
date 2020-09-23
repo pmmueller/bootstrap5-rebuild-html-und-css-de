@@ -7,20 +7,20 @@ Im Kurs wird die Seite Stück für Stück aufgebaut und wächst live mit.
 
 
 ## 01 Template 
-- einfach nur ein grundlegendes Bootstrap-Template
-- BootstrapCDN, nur CSS im header 
-- Link zu Bootstrap ist bei mir nach Seitentitel (Gewohnheit ...)
+- grundlegendes Bootstrap-Template
+- Bootstrap via BootstrapCDN, nur CSS 
+- der Link zu Bootstrap kommt *nach* dem Seitentitel 
 
 
 ## 02 Site-Header 
 - Site-Header mit Container, Logo und Slogan 
-- `.site-header` > `.container` 
+- `header.site-header` > `div.container` 
 - Utilities `pt-3` und `pb-0`
-- optional: .container auf 960px begrenzen (Contain the Container)
+- optional: `.container` auf 960px begrenzen (Motto: "Contain the Container")
 
 
 ## 03 Site-Navigation 
-- `nav.site-nav`> `div.container` 
+- `nav.site-nav` > `div.container` 
 - `.navbar` mit expand, dunkel, Schatten, sticky-top, p/m 
 - Menübutton als `.navbar-toggler`
 - Hauptnavigation als `.navbar-collapse` 
@@ -40,10 +40,10 @@ Im Kurs wird die Seite Stück für Stück aufgebaut und wächst live mit.
 
 
 ## 05 bis 07 Infoboxen 
-in verschiedenen Varianten 
-versteckte H2-Überschrift "Die Bereiche der Website"
-<!-- Frage: Kind von .row muss .col sein. Gilt das auch für .sr-only? --> 
-Artikel in den Spalten haben h3-Überschriften
+- in verschiedenen Varianten 
+- mit versteckter H2-Überschrift "Die Bereiche der Website" 
+<!-- Frage: Kind von .row sollte immer .col sein. Gilt das auch für .sr-only-Inhalte? --> 
+- die Artikel in den Spalten haben h3-Überschriften
 
 ### 05 Site-Content > Infoboxen klassisch 
 Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
@@ -55,7 +55,6 @@ Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
     - `div.card-body` > `h3.card-title`, `p.card-text` und `a`
     - `.card` gestalten mit Utilities `border-0` und `mb-3`
 
-
 ### 06 Site-Content > Infoboxen mit row-cols 
 - Steuerung des Verhaltens zentral in `.row` 
     - `.row-cols-1` 
@@ -63,10 +62,9 @@ Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
     - `.row-cols-md-3`
 - Spalten nur mit `.col` (ohne -sm-4 etc.)
 
-
-### 07 Boostrap-Icons 
+### 07 Infoboxen mit Boostrap-Icons 
 Im Abschnitt `.infoboxen` 3x ein Bootstrap-SVG-Icons einbauen 
-- RSS (umgebendes Quadrat auskommentiert)
+- RSS (der quadratische Rahmen drumherum wird auskommentiert, SVG ist cool)
 - People-Fill 
 - At 
 
@@ -82,7 +80,7 @@ Mehrfach 12-Spalten in einer Zeile
 
 
 ## 09 Site-Footer 
-- `footer.site-footer` > `.container` 
+- `footer.site-footer` > `div.container` 
 - darin eine Meta-Navigation mit `nav.navbar` 
     - die Liste `ul` wird Flex-Container 
     - Abstände rechts mit Utilities 
