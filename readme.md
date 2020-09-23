@@ -34,19 +34,19 @@ Im Videokurs wird die Seite Stück für Stück aufgebaut und wächst live mit.
     - Padding mit `px-3` 
 
 
-## 04 Site-Content > Intro 
+## 04 Startseite > Content-Intro 
 - `main.site-content` > `section.content-intro` > `div.container` 
 - einspaltiger Inhalt benötigt nicht zwingend `.row` und `.col`
 - H2 und Fließtext 
 
 
-## 05 bis 07 Infoboxen 
+## 05 bis 07 Startseite > Infoboxen 
 - in verschiedenen Varianten 
 - mit versteckter H2-Überschrift "Die Bereiche der Website" 
 <!-- Frage: Kind von .row sollte immer .col sein. Gilt das auch für .sr-only-Inhalte? --> 
 - die Artikel in den Spalten haben h3-Überschriften
 
-### 05 Site-Content > Infoboxen klassisch 
+### 05 Infoboxen klassisch 
 Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
 - `section.infoboxen` mit `.bg-light` > `.container` 
     - h2.sr-only "Die Bereiche der Website" 
@@ -56,7 +56,7 @@ Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
     - `div.card-body` > `h3.card-title`, `p.card-text` und `a`
     - `.card` gestalten mit Utilities `border-0` und `mb-3`
 
-### 06 Site-Content > Infoboxen mit row-cols 
+### 06 Infoboxen mit row-cols 
 - Steuerung des Verhaltens zentral in `.row` 
     - `.row-cols-1` 
     - `.row-cols-sm-2` 
@@ -70,7 +70,7 @@ Im Abschnitt `.infoboxen` 3x ein Bootstrap-SVG-Icons einbauen
 - At 
 
 
-## 08 Site-Content > Kundenstimmen 
+## 08 Startseite > Site-Content > Kundenstimmen 
 Mehrfach 12-Spalten in einer Zeile 
 - `section.kundenstimmen` > `div.container` 
 - Überschrift mit `.col-12` über die ganze Zeile 
@@ -90,7 +90,7 @@ Mehrfach 12-Spalten in einer Zeile
 
 
 ## 10 Startseite komplett 
-Die einzelnen Module, alle in einer Datei. 
+Header, Navigation, Content-Abschnitte und Footer in einer Datei.
 
 
 --- eof --- 
