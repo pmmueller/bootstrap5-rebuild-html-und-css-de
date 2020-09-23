@@ -2,12 +2,8 @@
 
 Übungswebsite von [https://html-und-css.de] mit Bootstrap 5 nachbauen 
 
-In den einzelnen Dateien werden nur die jeweiligen Komponenten gespeichert. Zusammengebaut werden die kompletten Seiten erst danach. 
 
-Im Videokurs wird die Seite Stück für Stück aufgebaut und wächst live mit. 
-
-
-## 01 Template 
+## 01 Bootstrap Template 
 - grundlegendes Bootstrap-Template
 - Bootstrap via BootstrapCDN, nur CSS 
 - der Link zu Bootstrap kommt *nach* dem Seitentitel 
