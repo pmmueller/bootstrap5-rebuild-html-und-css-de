@@ -53,7 +53,6 @@ Zugeschaut und mitgebaut ...
 ## 05 bis 07 Startseite > Abschnitt "Infoboxen" 
 - in verschiedenen Varianten 
 - mit versteckter H2-Überschrift "Die Bereiche der Website" 
-<!-- Frage: Kind von .row sollte immer .col sein. Gilt das auch für .sr-only-Inhalte? --> 
 - die Artikel in den Spalten haben h3-Überschriften
 
 ### 05 Infoboxen klassisch 
