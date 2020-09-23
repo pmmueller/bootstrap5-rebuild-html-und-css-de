@@ -34,13 +34,13 @@ Im Videokurs wird die Seite Stück für Stück aufgebaut und wächst live mit.
     - Padding mit `px-3` 
 
 
-## 04 Startseite > Content-Intro 
+## 04 Startseite > Abschnitt "Content-Intro"  
 - `main.site-content` > `section.content-intro` > `div.container` 
-- einspaltiger Inhalt benötigt nicht zwingend `.row` und `.col`
 - H2 und Fließtext 
+- einspaltiger Inhalt ist auch ohne `.row` und `.col` horizontal bündig 
 
 
-## 05 bis 07 Startseite > Infoboxen 
+## 05 bis 07 Startseite > Abschnitt "Infoboxen" 
 - in verschiedenen Varianten 
 - mit versteckter H2-Überschrift "Die Bereiche der Website" 
 <!-- Frage: Kind von .row sollte immer .col sein. Gilt das auch für .sr-only-Inhalte? --> 
@@ -70,7 +70,7 @@ Im Abschnitt `.infoboxen` 3x ein Bootstrap-SVG-Icons einbauen
 - At 
 
 
-## 08 Startseite > Site-Content > Kundenstimmen 
+## 08 Startseite > Abschnitt "Kundenstimmen" 
 Mehrfach 12-Spalten in einer Zeile 
 - `section.kundenstimmen` > `div.container` 
 - Überschrift mit `.col-12` über die ganze Zeile 
