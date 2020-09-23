@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite von html-und-css.de mit Bootstrap</title>
+
+    <!-- https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <style>
+        .container { max-width: 960px !important; }
+    </style>
+</head>
+
+<body>
+
+    <main class="site-content">
+
+
+        <!-- Infoboxen mit Row-Cols (https://v5.getbootstrap.com/docs/5.0/components/card/#grid-cards)-->
+        <section class="bg-light py-5 mt-5 infoboxen">
+            <div class="container">
+
+                <h2 class="sr-only">Die Bereiche der Website</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
+                    <div class="col">
+                        <article class="card border-0 mb-3">
+                            <a href="#">
+                                <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-rss mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <!--
+                                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    -->
+                                    <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    <path fill-rule="evenodd" d="M2.5 3.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
+                                </svg>
+                            </a>    
+                            <div class="card-body">
+                            <h2 class="card-title">News</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <a href="#">Ab zum Blog</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card border-0 mb-3">
+                            <a href="#">
+                                <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-people-fill mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                                </svg>
+                            </a>
+                            <div class="card-body">
+                            <h2 class="card-title">Über uns</h2>
+                            <p class="card-text">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <a href="#">Wer wir sind</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card border-0 mb-3">
+                            <a href="#">
+                                <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-at mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+                                </svg>
+                            </a>
+                            <div class="card-body">
+                            <h2 class="card-title">Kontakt</h2>
+                            <p class="card-text">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                            <a href="#">Hallo sagen</a>
+                            </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
