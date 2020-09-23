@@ -1,7 +1,6 @@
 
 /** 
-  * Restrain the container 
-  * niemals breiter als 960px 
+  * Container: maximale Breite 960px 
   */
 .container { max-width: 960px !important; }
 
@@ -10,6 +9,7 @@
   * Navigation gestalten 
   */ 
 
+/* Grundlegende Gestaltung für alle Viewports */
 .site-nav a {
     min-width: 12ch; 
     padding-right: 1rem !important;
@@ -21,14 +21,10 @@
     background: var(--bs-secondary);
     color: var(--bs-white) !important;
 }
-.navbar-toggler {
-    font-size: 1rem; 
-    border: none; 
-}
 
-/* Breakpoint sm */
+/* Horizontale Navigation - Breakpoint = sm */
 @media screen and (min-width: 576px) {
-    /* Farbwert .bg-light */
+
     .site-nav li {
         text-align: center;
         border-right: 1px solid var(--bs-light); 
