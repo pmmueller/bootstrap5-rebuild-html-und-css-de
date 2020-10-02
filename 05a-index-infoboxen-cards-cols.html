@@ -16,13 +16,23 @@
 <body>
 
     <main class="site-content">
-    
-        <!-- Infoboxen mit Row-Cols (https://v5.getbootstrap.com/docs/5.0/components/card/#grid-cards)-->
+
+        <!-- Infoboxen mit normalem Grid markup (https://v5.getbootstrap.com/docs/5.0/components/card/#using-grid-markup)-->
         <section class="bg-light py-5 mt-5 infoboxen">
             <div class="container">
+                
+                <!-- Einspaltiger Inhalt ist horizontal auch ohne .row und .col bündig -->                                
                 <h2 class="sr-only">Die Bereiche der Website</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
-                    <div class="col">
+
+                <!-- Mehrspaltige Inhalte brauchen ein Grid mit .row und .col -->
+                <div class="row text-center">
+                  
+                    <!-- 
+                        Wenn die Anzahl der Elemente bekannt ist, sind die Gridklassen ideal 
+                        1col, ab sm 2col, ab lg 3col 
+                    -->
+                    <div class="col-sm-6 col-lg-4">
+                    
                         <article class="card border-0 mb-3">
                             <div class="card-body">
                             <h3 class="card-title">News</h3>
@@ -30,8 +40,11 @@
                             <a href="#">Ab zum Blog</a>
                             </div>
                         </article>
+                    
                     </div>
-                    <div class="col">
+
+                    <div class="col-sm-6 col-lg-4">
+                    
                         <article class="card border-0 mb-3">
                             <div class="card-body">
                             <h3 class="card-title">Über uns</h3>
@@ -39,21 +52,30 @@
                             <a href="#">Wer wir sind</a>
                             </div>
                         </article>
+                    
                     </div>
-                    <div class="col">
+
+                    <!-- Bei sm nur die Hälfte der Zeile -->
+                    <div class="col-sm-6 col-lg-4">
+                    
                         <article class="card border-0 mb-3">
                             <div class="card-body">
                             <h3 class="card-title">Kontakt</h3>
                             <p class="card-text">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                             <a href="#">Hallo sagen</a>
                             </div>
-                    </article>
+                        </article>
+                    
                     </div>
-                </div>
-            </div>
-        </section>
 
+                </div><!-- /.row -->
+
+            </div><!-- /.container -->
+
+        </section><!-- /.infoboxen -->
+        
     </main>
+
 
 </body>
 </html>

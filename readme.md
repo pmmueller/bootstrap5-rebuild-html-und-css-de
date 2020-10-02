@@ -17,7 +17,7 @@ Zugeschaut und mitgebaut ...
 - Site-Header mit Container, Logo und Slogan 
 - `header.site-header` > `div.container` 
 - Utilities `pt-3` und `pb-0`
-- optional: `.container` auf 960px begrenzen (Motto: "Contain the Container")
+- optional: `.container` auf maximal 960px begrenzen
 
 ---
 
@@ -50,38 +50,34 @@ Zugeschaut und mitgebaut ...
 
 ---
 
-## 05 bis 07 Startseite > Abschnitt "Infoboxen" 
-- in verschiedenen Varianten 
+## 05 Startseite > Abschnitt "Infoboxen" 
 - mit versteckter H2-Überschrift "Die Bereiche der Website" 
 - die Artikel in den Spalten haben h3-Überschriften
 
-### 05 Infoboxen klassisch 
+### 05a Infoboxen mit klassischem Grid-Markup
 Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
 - `section.infoboxen` mit `.bg-light` > `.container` 
     - h2.sr-only "Die Bereiche der Website" 
-    - klassisch: 1x `.row` mit 3x `.col-sm-4` 
-    - in jeder Spalte 1x `article.card` 
+    - Grid 
+        - 1x `.row` 
+            - 3x `.col-sm-6` 
+            - 3x `.col-lg-4`
+            - in jeder Spalte 1x `article.card` 
 - Karten 
     - `div.card-body` > `h3.card-title`, `p.card-text` und `a`
     - `.card` gestalten mit Utilities `border-0` und `mb-3`
 
-### 06 Infoboxen mit row-cols 
-- Steuerung des Verhaltens zentral in `.row` 
-    - `.row-cols-1` 
-    - `.row-cols-sm-2` 
-    - `.row-cols-md-3`
-- Spalten nur mit `.col` (ohne -sm-4 etc.)
 
-
-### 07 Infoboxen mit Boostrap-Icons 
-Im Abschnitt `.infoboxen` 3x ein Bootstrap-SVG-Icons einbauen 
+### 05b Infoboxen mit Boostrap-Icons 
+Infoboxen mit ein Bootstrap-SVG-Icons 
 - RSS (der quadratische Rahmen drumherum wird auskommentiert, SVG ist cool)
 - People-Fill 
 - At 
 
+
 ---
 
-## 08 Startseite > Abschnitt "Kundenstimmen" 
+## 06 Startseite > Abschnitt "Kundenstimmen" 
 Mehrfach 12-Spalten in einer Zeile 
 - `section.kundenstimmen` > `div.container` 
 - Überschrift mit `.col-12` über die ganze Zeile 
@@ -92,29 +88,30 @@ Mehrfach 12-Spalten in einer Zeile
 
 ---
 
-## 09 Site-Footer 
+## 07 Site-Footer 
 - `footer.site-footer` > `div.container` 
 - darin eine Meta-Navigation mit `nav.navbar` 
     - die Liste `ul` wird Flex-Container 
     - Abstände rechts mit Utilities 
     - `mr-3` für den ersten Link
-    - `mr-auto` beim 2. Link schiebt Link Nr. 3 nach rechts außen
+    - `ml-auto` beim schiebt Link Nr. 3 nach rechts außen
+    - Link "Nach oben" mit Icon  
 
 ---
 
-## 10 Template mit Header, Navigation und Footer
+## 08 Template mit Header, Navigation und Footer
 Vorlage mit Header, Navigation, und Footer   
 Ohne Inhalt
 
 ---
 
-## 11 Startseite komplett 
+## Startseite komplett 
 Template plus Content-Abschnitte für die Startseite 
 Navigationslink aktivieren
     
 ---
 
-## 12 Seite News komplett 
+## Seite News komplett 
 Template plus Content-Abschnitte für die Seite News.  
 Inhalte in `main.site-content` hinzufügen: 
 - nur einen `div.container`, da es keine farblichen Abschnitte gibt 
@@ -127,7 +124,18 @@ Inhalte in `main.site-content` hinzufügen:
     - Gestaltung der Artikel und Linklisten mit Bootstrap-Utilities 
 - Navigationslinks aktivieren (auch auf der Startseite) 
 
+--- 
+
+## Seite Über uns komplett 
+Template plus Content-Abschnitte für die Seite Über uns 
+- `.content-intro` mit nach rechts gefloatetem Bild 
+- `.team` mit Karten 
+    - farbiger Header mit `card-header bg-primary` 
+    - Inhalt in `card-body` 
+
 ---
 
+## Seite Kontakt (noch nicht) komplett 
+ToDo: Kontaktformular und das Layout fehlt noch 
 
 --- eof --- 

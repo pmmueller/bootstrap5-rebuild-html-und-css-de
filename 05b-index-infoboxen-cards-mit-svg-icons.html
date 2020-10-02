@@ -17,16 +17,19 @@
 
     <main class="site-content">
 
-
-        <!-- Infoboxen mit Row-Cols (https://v5.getbootstrap.com/docs/5.0/components/card/#grid-cards)-->
+        <!-- Infoboxen mit normalem Grid markup (https://v5.getbootstrap.com/docs/5.0/components/card/#using-grid-markup)-->
         <section class="bg-light py-5 mt-5 infoboxen">
+
             <div class="container">
 
                 <h2 class="sr-only">Die Bereiche der Website</h2>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center">
-                    <div class="col">
+                <div class="row text-center">
+                    
+                    <div class="col-sm-6 col-lg-4">
+
                         <article class="card border-0 mb-3">
+                            <!-- Anklickbares SVG-Icon. Größe wird über width/height gesteuert -->
                             <a href="#">
                                 <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-rss mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <!--
@@ -42,8 +45,11 @@
                             <a href="#">Ab zum Blog</a>
                             </div>
                         </article>
+
                     </div>
-                    <div class="col">
+                    
+                    <div class="col-sm-6 col-lg-4">
+
                         <article class="card border-0 mb-3">
                             <a href="#">
                                 <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-people-fill mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -56,8 +62,11 @@
                             <a href="#">Wer wir sind</a>
                             </div>
                         </article>
+
                     </div>
-                    <div class="col">
+
+                    <div class="col-sm-6 col-lg-4">
+
                         <article class="card border-0 mb-3">
                             <a href="#">
                                 <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-at mx-auto mt-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -69,11 +78,15 @@
                             <p class="card-text">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                             <a href="#">Hallo sagen</a>
                             </div>
-                    </article>
+                        </article>
+
                     </div>
-                </div>
-            </div>
-        </section>
+
+                </div><!-- /.row -->
+            
+            </div><!-- /.container -->
+
+        </section><!-- /.infoboxen -->
 
     </main>
 

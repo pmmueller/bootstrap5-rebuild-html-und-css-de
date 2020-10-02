@@ -19,11 +19,21 @@
 
         <section class="py-5 kundenstimmen">
             <div class="container">
-                <div class="row">
+                
+                <h2>Kundenstimmen</h2>
+                
+                <!-- 
+                    Grid > Responsive classes > Row columns 
+                    https://v5.getbootstrap.com/docs/5.0/layout/grid/#row-columns 
                     
-                    <h2 class="col-12 mb-3">Kundenstimmen</h2>
+                    Zentrale Steuerung der Spalten über .row 
+                    Ideal, wenn man nicht weiß, wie viele Elemente es geben wird. 
+                    Man gibt einfach die gewünschte Anzahl der Spalten vor
+                -->
 
-                    <div class="col-sm-6 col-md-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                    <div class="col">
                         <figure class="bg-light p-3 border-left border-primary">
                             <blockquote class=" blockquote kundenstimme">
                                 <p>Voluptas veniam, eaque excepturi adipisci sequi explicabo.</p>
@@ -33,7 +43,8 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-sm-6 col-md-4">
+                    
+                    <div class="col">
                         <figure class="bg-light p-3 border-left border-primary">
                             <blockquote class=" blockquote kundenstimme">
                                 <p>Dolore optio deleniti ex quibusdam ullam ad dolores maxime harum!</p>
@@ -43,7 +54,8 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+
+                    <div class="col">
                         <figure class="bg-light p-3 border-left border-primary">
                             <blockquote class=" blockquote kundenstimme">
                                 <p>Lorem ipsum dolor sit amet quibusdam, adipisicing elit. Quia, ratione?</p>
@@ -53,9 +65,23 @@
                             </figcaption>
                         </figure>
                     </div>
-                </div>
-            </div>
-        </section>
+
+                    <div class="col">
+                        <figure class="bg-light p-3 border-left border-primary">
+                            <blockquote class=" blockquote kundenstimme">
+                                <p>Und eine vierte Kundenstimme. Überhaupt kein Problem. </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Quelle
+                            </figcaption>
+                        </figure>
+                    </div>             
+
+                </div><!-- /.row -->
+
+            </div><!-- /.container -->
+
+        </section><!-- /.kundenstimmen -->
         
     </main>
 

@@ -15,35 +15,47 @@
 
 <body>
 
+    <!-- Die Navigation geht über die gesamte Breite der Seite -->
     <nav class="site-nav navbar navbar-expand-sm sticky-top navbar-dark bg-dark py-0 mt-3 mb-5 shadow">
+
+        <!-- Der Container begrenzt die Breite und gibt horizontales padding -->
         <div class="container">
         
+            <!-- Der Navigationsbutton -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Die horizontale Navigation -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
                 <ul class="navbar-nav">	
+                
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
                     </li>	
+                
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
                     </li>	
+                
                     <li class="nav-item">
                         <a class="nav-link" href="#">Über uns</a>
                     </li>	
+                
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kontakt</a>
                     </li>	
+                
                 </ul>	
-            </div>
+            
+            </div><!-- /.collapse-->
 
-        </div>
+        </div><!-- /.container -->
     </nav>
 
 
-    <!-- Bootstrap JS für collapsible navbar -->
+    <!-- Bootstrap JS, .collapse funktioniert nicht ohne -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>
