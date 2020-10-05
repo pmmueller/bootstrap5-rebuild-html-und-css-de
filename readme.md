@@ -106,16 +106,15 @@ Kontaktformular
 - zweispaltig responsiv (`label` über/vor `input`)
 
 ### 08a Kontaktformular 1-spaltig
-wie in der Bootstrap-Doku 
+wie in der Bootstrap-Doku    
 DSGVO wie im Buch, Kapitel 9.8 
 
 
 ### 08b Kontaktformular 2-spaltig
 Layout ähnlich wie beim Videokurs 
 - mobil: Kontaktdaten - Kontaktformular 
-- ab sm 
-    - `label` vor Eingabefelder 
-    - rechtsbündig ausgerichtet 
+- ab `sm` 
+    - `label` rechtsbündig vor den Eingabefeldern 
     - DSGVO und Button mit offset-sm-2 
 
 ---
@@ -159,8 +158,9 @@ Template plus Content-Abschnitte für die Seite Über uns
 ## Seite Kontakt komplett 
 Kontaktdaten und Kontaktformular 
 - mobil untereinander 
-- ab sm 
-    - kontaktformular | kontaktdaten 
+- ab `sm` 
+    - kontaktformular links 
+    - kontaktdaten rechts 
 
 
 
