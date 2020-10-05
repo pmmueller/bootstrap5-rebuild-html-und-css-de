@@ -58,7 +58,7 @@ Zugeschaut und mitgebaut ...
 ### 05a Infoboxen mit klassischem Grid-Markup
 Klassisches Bootstrap-Verhalten: 3-spaltig ab sm
 - `section.infoboxen` mit `.bg-light` > `.container` 
-    - h2.sr-only "Die Bereiche der Website" 
+    - h2.visually-hidden "Die Bereiche der Website" 
     - Grid 
         - 1x `.row` 
             - 3x `.col-sm-6` 
@@ -138,7 +138,7 @@ Inhalte in `main.site-content` hinzufügen:
 - erster Abschnitt `section.col.content-intro` über ganze Breite 
 - zweiter Abschitt ist zweispaltig 
     - `div.row` mit größerem Gutter `.gx-5` 
-    - alle H2 als `.sr-only` 
+    - alle H2 als `.visually-hidden` 
     - Beitragsliste `section.col-md-8.beitragsliste` 
     - Linklisten als `aside.col-md-4.linklisten` 
     - Gestaltung der Artikel und Linklisten mit Bootstrap-Utilities 
