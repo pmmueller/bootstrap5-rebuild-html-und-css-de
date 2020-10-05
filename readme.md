@@ -1,4 +1,5 @@
 # Die Übungswebsite mit Bootstrap 5  
+Stand: 05.10.2020 - Bootstrap 5 alpha 2 
 
 Zugeschaut und mitgebaut ...   
 Übungswebsite von https://html-und-css.de mit Bootstrap 5  
