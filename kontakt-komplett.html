@@ -68,7 +68,7 @@
 
         <div class="container">
             
-            <!-- div.row nicht nötig, da der Inhalt einspaltig ist   -->
+            <!-- div.row nicht nötig, da .content-intro einspaltig ist   -->
 
                 <section class="content-intro mb-5">
                     <h2>Kontakt</h2>
@@ -76,10 +76,12 @@
                 </section>
 
                 <!-- 
-                    Kontaktformular und Kontaktdaten nebeneinander 
-                    Reihenfolge ändern mit d-flex und order-first 
+                    Kontaktformular und Kontaktdaten ab Breakpoint sm nebeneinander 
+                    Reihenfolge ändern mit order-first für section.kontaktformular  
+                     - row ist Flex-Container
+                     - section sind Flex-Items 
                  -->
-                <div class="row gx-5">
+                <div class="row gx-5"> 
 
                     <section class="kontaktdaten bg-light border rounded mb-5 col-sm-3">
                         <h3 class="visually-hidden">Kontaktdaten</h3>
