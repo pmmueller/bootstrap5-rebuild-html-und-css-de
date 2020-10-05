@@ -67,30 +67,85 @@
     <main class="site-content">
 
         <div class="container">
+            
+            <!-- div.row nicht nötig, da der Inhalt einspaltig ist   -->
 
-            <div class="row">
-
-                <section class="content-intro">
+                <section class="content-intro mb-5">
                     <h2>Kontakt</h2>
                     <p>Fragen? Anregungen? Auf dieser Seite finden Sie Möglichkeiten, mit uns in Kontakt zu treten.</p>
                 </section>
 
-                <section class="kontaktdaten">
-                    <h2 class="visually-hidden">Kontaktdaten</h2>
-                    <address>
-                        <p>Waldemar Weber<br>
-                        Kästchenweg 12
-                        01234 Boxberg</p>
-                        <p>Tel.: <a href="tel:010.634.5789">010 634 5789</a></p>
-                    </address>
-                </section>
-                
-                <section class="kontaktformular">
-                    <h2 class="visually-hidden">Kontaktformular</h2>
-                    <p>Mit dem folgenden Formular können Sie uns eine Nachricht schicken.</p>
-                </section>
+                <!-- 
+                    Kontaktformular und Kontaktdaten nebeneinander 
+                    Reihenfolge ändern mit d-flex und order-first 
+                 -->
+                <div class="row gx-5">
 
-            </div><!-- /. row -->
+                    <section class="kontaktdaten bg-light border rounded mb-5 col-sm-3">
+                        <h3 class="visually-hidden">Kontaktdaten</h3>
+                        <address class="p-3">
+                            <p>Waldemar Weber<br>
+                            Kästchenweg 12<br>
+                            01234 Boxberg</p>
+                            <p>Tel.: <a href="tel:010.634.5789">010 634 5789</a></p>
+                        </address>
+                    </section>
+                    
+                    <section class="kontaktformular col-sm-9 order-sm-first">
+                        <h3 class="visually-hidden">Kontaktformular</h3>
+                        
+                        <p>Mit dem folgenden Formular können Sie uns eine Nachricht schicken.</p>
+
+                        <form class="p-3">
+                
+                            <div class="row mb-3">
+                                <!-- .col-form-label für vertikale Zentrierung -->
+                                <label for="besuchername" class="col-form-label col-sm-2 text-sm-right">Ihr Name</label>
+                                <!-- Zusätzliches DIV für Gridklassen wegen horizontalem padding -->                    
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="besuchername" name="besuchername" required>
+                                </div> 
+                            </div>
+            
+                            <div class="row mb-3">
+                                <label for="besuchermail" class="col-form-label col-sm-2 text-sm-right">Ihre E-Mail</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="besuchermail" name="besuchermail" required>
+                                </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                                <label for="nachricht" class="col-form-label col-sm-2 text-sm-right">Nachricht</label>
+                                <div class="col-sm-10">
+                                    <textarea name="nachricht" id="nachricht" cols="30" rows="10" class="form-control" required></textarea>
+                                </div>
+                            </div>
+            
+            
+                            <div class="row">
+                                <!-- Zusätzliches DIV für Gridklassen wegen horizontalem padding -->
+                                <div class="offset-sm-2 col-10">
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="dsgvo" name="dsgvo" required>
+                                        <label for="dsgvo" class="form-check-label d-inline">
+                                            Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden
+                                        </label> (<a class="form-text" href="#" target="_blank">Datenschutzerklärung</a>)
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <!-- Zusätzliches DIV für Gridklassen wegen horizontalem padding -->
+                                <div class="offset-sm-2 col-sm-8">
+                                    <button type="submit" class="btn btn-primary">Abschicken</button>
+                                </div>
+                            </div>
+            
+                        </form>
+
+                    </section>
+
+                </div><!-- /.row -->
 
         </div><!-- /.container -->
 
